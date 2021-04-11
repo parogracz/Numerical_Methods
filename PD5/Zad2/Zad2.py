@@ -15,7 +15,6 @@ def Nasser_Daniel_rozklad_LU_doolittle(A):
                   x += L[i][k] * U[k][j]
                 L[j][i] = (1/U[i][i])*(A[j][i]-x)
     A = U
-    return L
+    return L,U
 A=[[3,1,2],[6,4,9],[9,4,8]]
 print(Nasser_Daniel_rozklad_LU_doolittle(A))
-print(A)
